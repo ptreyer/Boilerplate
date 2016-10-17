@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <title>Awesome Boilerplate</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <link href="http://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="design/index.css">
 </head>
@@ -12,22 +13,39 @@
 		<div>
 			<h1><span>Awesome</span> Boilerplate</h1>
 			<p>
-				<label>Jump To Content</label><br>
-				<label>Jump To Footer</label><br>
-				<label>Jump To Kitties</label>
+				<a href="#content">Jump To Content</a><br>
+				<a href="#footer">Jump To Footer</a><br>
+				<a href="https://de.wikipedia.org/wiki/Katzen">Jump To Kitties</a>
 			</p>
 		</div>
 	</header>
 	<main>
 		<section>
 			<article>
-			<!--ToDo Input Fields-->	
-			Input fields belongs here :)
+			<!--ToDo Input Fields-->
+				<form>
+					First name:<br>
+					<input type="text" name="firstname"><br><br>
+					Last name:<br>
+					<input type="text" name="lastname"><br><br>
+					Email:<br>
+					<input type="text" name="email"><br><br>
+					Phone number:<br>
+					<input type="text" name="phone"><br><br>
+					Date of Birth:<br>
+					<input type="text" name="birth"><br><br>
+					Select:<br>
+					<select style="width: 150px">
+						<option value="uib">UIB</option>
+						<option value="ib">IB</option>
+						<option value="imb">IMB</option>
+					</select>
+				</form>
 
 			</article>
 
 		</section>
-		<section>
+		<section id="content">
 			<article>
 				<figure>
 					<div class="icon icon-learn"></div>
@@ -55,6 +73,7 @@
 				<h3>Help Others</h3>
 				<p>
 					Das wichtigste hierbei ist allerdings auch anderen zu helfen und sie zu unterstützen.
+				</p>
 			</article>
 			<article>
 				<figure>
@@ -63,14 +82,14 @@
 				<h3>Follow Us</h3>
 				<p>
 					Falls du fragen hast, kannst du dich jederzeit an 
-					<a href="https://git.com/CodeKittey">@Codekittey</a>, wenden oder eine
+					<a href="https://GitHub.com/CodeKittey">@Codekittey</a>, wenden oder eine
 					Email schreiben: m.kraus@hs-mannheim.de
 				</p>
 			</article>
 		</section>
 	</main>
-	<footer>
-		<img src="img/nodschool.svg"></a>
+	<footer id="footer">
+		<img src="img/nodeschool.svg"></a>
 	</footer>
 	<script src="design/index.js"></script>
 </body>
