@@ -23,23 +23,24 @@
 		<section>
 			<article>
 			<!--ToDo Input Fields-->
-				<form>
-					First name:<br>
-					<input type="text" name="firstname"><br><br>
-					Last name:<br>
-					<input type="text" name="lastname"><br><br>
-					Email:<br>
-					<input type="text" name="email"><br><br>
-					Phone number:<br>
-					<input type="text" name="phone"><br><br>
-					Date of Birth:<br>
-					<input type="text" name="birth"><br><br>
-					Select:<br>
-					<select style="width: 150px">
+				<form action="">
+                  	<label for="firstname">First name:</label><br>
+					<input id="firstname" type="text" placeholder="Max"><br><br>
+                    <label for="lastname">Last name:</label><br>
+					<input id="lastname" type="text" placeholder="Mustermann"><br><br>
+                    <label for="email">Email:</label><br>
+					<input id="email" type="email" placeholder="maxmustermann@test.de"><br><br>
+                    <label for="phone">Phone number:</label><br>
+					<input id="phone" type="tel" placeholder="01234/56789"><br><br>
+                    <label for="birth">Date of Birth:</label><br>
+					<input id="birth" type="date"><br><br>
+                    <label for="selection">Select:</label><br>
+					<select id="selection" style="width: 150px">
 						<option value="uib">UIB</option>
-						<option value="ib">IB</option>
+						<option selected="selected" value="ib">IB</option>
 						<option value="imb">IMB</option>
-					</select>
+					</select><br><br><br>
+                    <button type="submit">Formular absenden!</button><br>
 				</form>
 
 			</article>
